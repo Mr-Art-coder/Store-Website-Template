@@ -1,0 +1,56 @@
+*{
+			box-sizing:border-box;	
+			margin: 0px;
+		}
+		body{
+			background-color: black;
+			color: gold;
+		}
+		/**Header////////////////////////////////////////////////////////**/
+		div{
+			border-style: none;
+			background-color: gold;
+
+		}
+		h1{
+			text-align: center;
+			font-size: 3em;
+			color: black;
+			padding-top: 10px;
+		}
+		ul{
+			text-align: center;
+			padding-top: 40px;
+		}
+		li{
+			display: inline;
+			padding-left: 15px;
+		}
+
+		a{
+			list-style: none;
+			text-decoration: none;
+			font-size: 1.3em;
+			color: black;
+		}
+		
+		/** Main///////////////////////////////////////////////////////////////////////////////////////**/
+		main{
+			margin-top: 50px;
+		}
+		h2{
+			padding-bottom: 20px;
+			text-align: center;
+		}
+	
+		p{
+			line-height: 1.5em;
+			font-size: 1.2em;
+		}
+		span{
+			color: gold;
+			font-size: 1.2em;
+		}
+		span:active, span:hover{
+			color: white;
+		}
