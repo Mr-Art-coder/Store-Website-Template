@@ -4,8 +4,8 @@
 body{
 	margin: 0px;
 	background-color: #2ecbe9;
-	color: black;
-	font-family: sans-serif;
+	color: #2ecbe9;
+	font-family: 'Oxygen', sans-serif;
 }
 /** HEAD WORK **/
 
@@ -13,14 +13,13 @@ body{
 	background-color: #fff;
 	width: 100%;
 	height: 150px;
-	color: #2d2926ff;
 }
 
 .head-image{
 	float: left;
-	}
+}
 
-	img{
+img{
 	height: 100px;
 	width: 200px;
 	margin: 25px 0px 0px 35px;
@@ -29,65 +28,141 @@ body{
 .motor-head{
 	font-weight: bolder;
 	color: #2ecbe9;
-	padding: 30px 0px 0px 17em;
+	padding: 30px 0px 0px 15em;
 }
 .motor-head span{
 	color: #e94b3cff;
 	padding-bottom: 10em;
 }
 
-.head-div ul{
-	float: right;
-	margin-right: 200px;
-	font-weight: bold;
-	font-size: 20px;
+/** Navbar container for menu */
+.navbar {
+  overflow: hidden;
+  font-weight: bolder;
+  background-color: none;
+  margin: -40px 100px 0px 0px;
 }
-.head-div li{
-	display: inline;
-	padding-left: 50px;
-	}
-	.head-div a{
-		color: #2ecbe9;
-	}
-	.head-div a:hover, a:active{
-		color: #e94b3cff;
-		text-decoration: none;
-		border: solid #2ecbe9 1px;
-	}
 
-	
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  color: #2ecbe9;
+  text-align: center;
+  padding: 14px 20px;
+  font-size: 30px;
+  text-decoration: none;
+
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow: hidden;
+
+}
+
+/* Dropdown button */
+
+.dropdown .dropbtn {
+  font-size: 30px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  color: #2ecbe9;
+  padding: 10px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: #e94b3cff;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e94b3cff;
+  border: solid #2ecbe9;
+  border-radius: 10%;
+  margin-top: -10px;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #2ecbe9;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: inline;
+  font-size: 15px;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  color: #fff;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 /** B0DDY WORK **/
 .row{
 	margin: 30px 25px 30px 25px;
+
 }
 .body-image{
+	background: url('../images/store.jpg') no-repeat;
+	background-size: 100% 100%;
 	width: 100%;
-	height: 500px;
-	border-style: solid;
+	height: 600px;
+	border: outset #e94b3cff;
 	margin-bottom: 50px;
 
 }
-
-.sub-menu{
+.sub-menu, .sub-menu3{
 float: left;
 width: 32%;
-height: 300px;
-border: solid;
+height: 350px;
+border: inset #e94b3cff;
+border-bottom-right-radius: 30px;
+border-top-left-radius: 30px;
 position: relative;
-margin: 0px 25px 20px 0px;
+margin: 0px 20px 20px 0px;
+overflow: hidden;
+}
+.sub-menu {
+	background: url('../images/homemale.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+.sub-menu3{
+	background: url('../images/homefemale.jpeg') no-repeat;
+	background-size: 100% 100%;
 }
 
 .sub-menu2{
 	float: right;
 	width: 32%;
-height: 300px;
-border: solid;
+height: 350px;
+border: inset #e94b3cff;
+border-bottom-right-radius: 30px;
+border-top-left-radius: 30px;
 position: relative;
 margin: 0px 0px 20px 0px;
+overflow: hidden;
 }
-
+.absolute{
+	margin-bottom: 450px;
+}
 .absolute span{
 	position: absolute;
 	bottom: 0px;
@@ -96,66 +171,545 @@ margin: 0px 0px 20px 0px;
 	width: 100%;
 	height: 30px;
 	padding-top: 5px;
-	overflow: auto;
 	text-align: center;
 	font-weight: bolder;
-	font-family: sans;
 	background-color: #e94b3cff;
 	opacity: .8;
 }
 
-/** FOOTER WORK **/
-.footer-div{
+/** Testimonial **/
+#iframe{
+	background-color: white;
 	width: 100%;
-	height: 200px;
-	position: relative;
-	color: #2d2926ff;
-	background-color: #e94b3cff;
-}
-.testmonial-div, .address{
-	margin: 20px 60px 20px 0;
+	font-weight: bold;
+	margin: 400px 0 80px 0;
+
 }
 
+#iframe > p{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	opacity: 0.7;
+}
+#iframe nav{
+	color: #e94b3cff;
+	text-align: center;
+	margin-top: 350px;
+	font-style: italic;
+}
 .testimonial{
-	background: url('image.jpg') no-repeat;
-	height: 100px;
-	width: 100px;
-	border: solid white;
+	background: url('../images/male.jpeg') no-repeat;
+}
+.testimonial2{
+background: url('../images/female.jpeg') no-repeat;
+}
+
+.testimonial, .testimonial2{
+	background-size: 100% 100%;
+	height: 250px;
+	width: 210px;
+	border: none;
 	float: left;
 }
-.testmonial-div p{
-	padding-left: 8em;
+
+.testmonial-div-1 {
+	float: left;	
 }
-.testmonial-div{
-	float: left;
-	width: 32%; 
-}
-.address{
+
+.testmonial-div-3{
 	float: right;
 }
 
-.footer-div nav{
+.testmonial-div-1, .testmonial-div-3{
+	width: 48%; 
+	height: 250px;
+	margin-top: 30px;
+	overflow: auto;
+}
+
+.testmonial-div-1 p, .testmonial-div-3 p{
+	margin: 0px 0 0 14em ;
+	text-align: justify;
+}
+
+footer{
+	clear: left;
+	text-align: center;
+	background-color: #e94b3cff;
+	color: #fff;
+	height: 50px;
+	padding-top: 10px;
+}
+
+
+/************ MALE HTML *********************/
+
+.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
+.male14, .male15, .male16{
+	float: left;
+	width: 24%;
+	height: 300px;
+	border: solid #e94b3cff;
+	margin: 0px 9px 30px 0px;
+	position: relative;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+.male1{
+	background: url('../images/male1.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male2{
+	background: url('../images/male2.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male3{
+	background: url('../images/male3.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male4{
+	background: url('../images/male4.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male5{
+	background: url('../images/male5.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male6{
+	background: url('../images/male6.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male7{
+	background: url('../images/male7.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male8{
+	background: url('../images/male8.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male9{
+	background: url('../images/male9.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male10{
+	background: url('../images/male10.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male11{
+	background: url('../images/male11.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male12{
+	background: url('../images/male12.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male13{
+	background: url('../images/male13.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male14{
+	background: url('../images/male14.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male15{
+	background: url('../images/male15.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male16{
+	background: url('../images/male16.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.male-div span{
 	position: absolute;
 	bottom: 0;
-	text-align: center;
+	right: 0;
 	width: 100%;
-	font-family: san;
+	height: 30px;
+	padding-top: 5px;
+	text-align: center;
 	font-weight: bolder;
-	font-size: 2em;
-	margin-top: 20px;
-}
-/** LARGE device only **/
-@media (max-width: 1200px ){
-
+	color: #e94b3cff;
+	background-color: #fff; 
+	opacity: .8;
 }
 
+.male-div dir{
+	position: absolute;
+	border: inset red;
+	padding: 20px;
+	border-radius: 100%;
+	color: #e94b3cff;
+	background-color: #fff;
+	top: -15px;
+	right: 0;
+	font-weight: bolder;
 
-/** MEDIUM device only **/
+}
+
+
+
+/************ FEMALE HTML *********************/
+.female1, .female2, .female3, .female4, .female5, .female6, .female7, .female8, .female9,.female10, .female11, .female12, .female13, 
+.female14, .female15, .female16{
+	float: left;
+	width: 24%;
+	height: 300px;
+	border: solid #e94b3cff;
+	margin: 0px 9px 30px 0px; 
+	position: relative;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+.female1{
+	background: url('../images/female1.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female2{
+	background: url('../images/female2.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female3{
+	background: url('../images/female3.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female4{
+	background: url('../images/female4.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female5{
+	background: url('../images/female5.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female6{
+	background: url('../images/female6.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female7{
+	background: url('../images/female7.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female8{
+	background: url('../images/female8.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female9{
+	background: url('../images/female9.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female10{
+	background: url('../images/female10.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female11{
+	background: url('../images/female11.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female12{
+	background: url('../images/female12.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female13{
+	background: url('../images/female13.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female14{
+	background: url('../images/female14.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female15{
+	background: url('../images/female15.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female16{
+	background: url('../images/female16.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+/************************************ SHOEE HTML ************************/
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9,.shoe10, .shoe11, .shoe12, .shoe13, 
+.shoe14, .shoe15, .shoe16{
+	float: left;
+	width: 24%;
+	height: 300px;
+	border: solid #e94b3cff;
+	margin: 0px 9px 30px 0px; 
+	position: relative;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+.shoe1{
+	background: url('../images/shoe1.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe2{
+	background: url('../images/shoe2.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe3{
+	background: url('../images/shoe3.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe4{
+	background: url('../images/shoe4.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe5{
+	background: url('../images/shoe5.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe6{
+ background: url('../images/shoe6.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe7{
+	background: url('../images/shoe7.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe8{
+	background: url('../images/shoe8.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe9{
+	background: url('../images/shoe9.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe10{
+	background: url('../images/shoe10.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe11{
+	background: url('../images/shoe11.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe12{
+	background: url('../images/shoe12.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe13{
+	background: url('../images/shoe13.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe14{
+	background: url('../images/shoe14.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe15{
+	background: url('../images/shoe15.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe16{
+	background: url('../images/shoe16.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+
+/** Extra LARGE device only **/
+@media (min-width: 1200px ){
+
+}
+
+
+/** Large device device only **/
 @media (min-width: 992px) and (max-width: 1199px){
-ul{
-	margin-right: 100px;
-}
+.navbar{
+
+	margin-right: 20px;
 }
 
-/** EXTRA SMALL device only **/
+.sub-menu, .sub-menu3{
+margin: 0px 15px 20px 0px;
+}
 
+.sub-menu2{
+margin: 0px 0px 20px 0px;
+}
+
+/***************** MALE HTML ******************/
+
+}
+
+/** Medium  device only **/
+
+@media (min-width: 768px ) and (max-width: 991px){
+.navbar{
+	margin: -15px 10px;
+}
+
+.navbar a, .dropdown .dropbtn{
+	padding-left: 10px;
+	font-size: 20px;
+	}
+
+.dropdown-content {
+  margin-top: -68px;
+}
+.dropdown-content a  {
+  padding: 4px 1px;
+  text-decoration: none;
+  display: inline;
+  font-size: 10px;
+}
+
+.sub-menu, .sub-menu3{
+width: 49%;
+margin: 0 0 20px 0;
+}
+.sub-menu3{
+float: right;
+}
+
+.sub-menu2{
+	width: 100%;
+margin: 0 0 20px 0
+}
+
+#iframe{
+	
+	margin-top: 750px;
+}
+.absolute{
+	margin-bottom: 850px;
+}
+/***************** MALE HTML ******************/
+.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
+.male14, .male15{
+	width: 32%;
+	margin-right: 9px;
+}
+.male16{
+	display: none;
+}
+
+
+/***************** FEMALE HTML ******************/
+.female1, .female2, .female3, .female4, .female5, .female6, .female7, .female8, .female9,.female10, .female11, .female12, .female13, 
+.female14, .female15{
+	width: 32%;
+	margin-right: 9px;
+}
+
+.female16{
+	display: none;
+}
+
+/********************************************* SHOE **********************************/
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9,.shoe10, .shoe11, .shoe12, .shoe13, 
+.shoe14, .shoe15{
+		width: 32%;
+	margin-right: 9px;
+}
+
+.shoe16{
+	display: none;
+}
+
+}
+
+
+/** SMALL DEVICE ONLY **/
+@media (max-width: 767px) {
+	.sub-menu, .sub-menu3{
+width: 100%;
+margin: 0 0 20px 0;
+}
+
+.sub-menu2{
+	width: 100%;
+margin: 0 0 20px 0
+}
+
+#iframe{
+	margin-top: 1100px;
+}
+#iframe nav{
+	margin-top: 40em;
+}
+.testmonial-div-1, .testmonial-div-3 {
+	width: 100%; 
+	
+	
+}
+.foot{
+	margin-bottom: 550px;
+}
+
+.absolute{
+	margin-bottom: 1200px;
+}
+/***************** MALE HTML ******************/
+.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
+.male14, .male15, .male16{
+	width: 49%;
+	margin-right: 4px;
+}
+
+
+/***************** FEMALE HTML ******************/
+.female1, .female2, .female3, .female4, .female5, .female6, .female7, .female8, .female9,.female10, .female11, .female12, .female13, 
+.female14, .female15, .female16{
+	width: 49%;
+	margin-right: 4px;
+}
+
+
+
+/************************************** SHOE ***********************************/
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9,.shoe10, .shoe11, .shoe12, .shoe13, 
+.shoe14, .shoe15, .shoe16{
+		width: 49%;
+	margin-right: 4px;
+}
+}

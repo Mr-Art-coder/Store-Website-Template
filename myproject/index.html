@@ -1,67 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>HOME</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<title>Home</title>
+
+	<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-	<!-------------- HEAD ---------------->
+	<!-------------- HEAD ------------------>
+	<header>
 	<div class="head-div">
-	
-			<a href="index.html"><img src="../images/mogo.png" alt="logo-image" class="head-image">
-			<div class="motor-head">
+			<div class="head-image"><a href="index.html"><img src="./images/mogo.png" alt="logo-image"></a></div>
+		<div class="motor-head">
 			<p>Affordable Wears<br>
 			<span>At your comfort</span></p></a>
 		</div>
+		
+			<div class="navbar">
+  <a href="about.html">About</a>
+ <a href="shoes.html">Shoes</a>
+  <div class="dropdown">
+    <button class="dropbtn">Wears
+    </button>
+    <div class="dropdown-content">
+      <a href="male.html">Male Wears</a>
+      <a href="female.html">Female Wears</a>
+    </div>
+  </div>
 
-		<ul>
-			<li><a href="">Home</a></li>
-			<li><a href="">Wares</a></li>
-			<li><a href="">Staffs</a></li>
-			<li><a href="">About</a></li>
-		</ul>
+  <a href="index.html">Home</a>
 </div>
+	</div>
+</header>
 
-	<!-------------- BODY ---------------->
+	<!-------------- BODY ------------------>
 <div class="row">
 <div class="body-image"> </div>
 
 <div class="absolute">
-		<a href="#"><div class="sub-menu"><span>FEMALE WEARS</span></div></a>
-		<a href="#"><div class="sub-menu"><span>MALE WEARS</span></div></a>
-		<a href="#"><div class="sub-menu2"><span>MAP</span></div></a>
+		<a href="female.html"><div class="sub-menu"><span>MALE WEARS</span></div></a>
+		<a href="male.html"><div class="sub-menu3"><span>FEMALE WEARS</span></div></a>
+		<a href="https://www.google.com/maps/place/Mr_Art+Online+go/@6.788424,3.925834,699m/data=!3m1!1e3!4m5!3m4!1s0x0:0xbed5b0bd30145971!8m2!3d6.7884237!4d3.9258341?hl=en-US" target="_blank"><div class="sub-menu2"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Mr_Art%20Online%20go,%20Ijagun%20Road,%20Ijebu%20Ode&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><span>MAP</span></div></a>
 	</div>
-</div>	
-
-	<!-------------- FOOTER ---------------->
-	<div class="footer-div">
-<div class="row">
-	<div class="testmonial-div">
+</div>
+	<!-------------- testimonial ------------------>
+	<div id="iframe">
+	<p>WHAT PEOPLE SAY ABOUT OUR STORE</p>
+	<div class="row">
+	<div class="testmonial-div-1">
 	<div class="testimonial" alt="testimonial"></div>
-	<p>I always find it difficult to choose what to wear and where to get it, but Davic settled the whole senario</p>
+	<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
 </div>
 
 
-<ul class="testmonial-div">
-			<li><a href="">Home</a></li>
-			<li><a href="">Wares</a></li>
-			<li><a href="">Staffs</a></li>
-			<li><a href="">About</a></li>
-		</ul>
-
-<div class="address">
-		<p>Block 2, Pelvic Avenue, Lagos Ikeja<br>
-			Call: 0906751244<br>
-		Email: adegunleraphael@gmail.com</p>
-		</div>
-
-		<nav>Webdesigned by Mr Art</nav>
+<div class="testmonial-div-3">
+	<div class="testimonial2" alt="testimonial"></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 </div>
-	</div>
-</body>
+</div>
+<nav>Affordable Wears At your Comfort</nav>
+</div>
+
+
+<footer>
+	<p>&copy; Davic'22 &#40;Web design by Adegunle Raphael Tobi&#41;</p>
+</footer>
+	
+	
+
+
+	<!---------------- JAVASCRIPT-------------
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>-->
+	</body>
 </html>
 <!-- (browser sync code) browser-sync start --server --directory --files "**/*"-->
