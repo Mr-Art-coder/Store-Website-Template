@@ -58,6 +58,8 @@ img{
 .dropdown {
   float: right;
   overflow: hidden;
+  margin-top: 5px;
+  font-weight: lighter;
 
 }
 
