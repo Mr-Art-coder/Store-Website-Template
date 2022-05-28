@@ -61,8 +61,6 @@ body{
 }
 .navbar-collapse{
 	background-color: inherit;
-	float: right;
-	width: 100%;
 }
 
 
@@ -638,6 +636,11 @@ margin: 0 0 20px 0
 .shoe14, .shoe15, .shoe16{
 		width: 100%;
 }
+
+.navbar-collapse{
+	float: right;
+	width: 100%;
+}
 }
 /********* SMALLER DEVICE ************/
 @media (max-width: 767px){
@@ -653,7 +656,10 @@ margin: 0 0 20px 0
 	margin: 0;
 
 }
-
+.navbar-collapse{
+	float: right;
+	width: 100%;
+}
 	}
 /** EXTRA SMALL DEVICES ***********/
 @media (max-width: 500px){
@@ -682,6 +688,10 @@ margin: 0 0 20px 0
 }
 .navbar-nav{
 	margin: 0;
+}
+.navbar-collapse{
+	float: right;
+	width: 100%;
 }
 }
 
