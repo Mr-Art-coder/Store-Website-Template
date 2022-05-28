@@ -61,6 +61,8 @@ body{
 }
 .navbar-collapse{
 	background-color: inherit;
+	float: right;
+	width: 100%;
 }
 
 
