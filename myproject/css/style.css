@@ -61,13 +61,14 @@ body{
 }
 .navbar-collapse{
 	background-color: inherit;
+	
 }
 
 
 
 /** B0DDY WORK **/
 .row{
-	margin: 30px 25px 30px 25px;
+	margin: 50px 25px 30px 25px;
 
 }
 .body-image{
@@ -167,13 +168,14 @@ background: url('../images/female.jpeg') no-repeat;
 .testmonial-div-1, .testmonial-div-3{
 	width: 48%; 
 	height: 250px;
-	margin-top: 30px;
-	overflow: auto;
+	margin-top: 20px;
 }
 
-.testmonial-div-1 p, .testmonial-div-3 p{
-	margin: 0px 0 0 14em ;
+.text-position{
+	margin: 0px 0 0 16em ;
 	text-align: justify;
+	height: 250px;
+	overflow: auto;
 }
 
 footer{
@@ -637,14 +639,6 @@ margin: 0 0 20px 0
 		width: 100%;
 }
 
-.navbar-collapse{
-	float: right;
-	width: 100%;
-}
-}
-/********* SMALLER DEVICE ************/
-@media (max-width: 767px){
-
 #navbar-right{
 	margin-top: 0;
 	float: none;
@@ -656,11 +650,16 @@ margin: 0 0 20px 0
 	margin: 0;
 
 }
-.navbar-collapse{
-	float: right;
-	width: 100%;
-}
+
+	.navbar-collapse{
+		float: right;
+		width: 100%;
+		margin-bottom: 30px;
 	}
+
+}
+
+
 /** EXTRA SMALL DEVICES ***********/
 @media (max-width: 500px){
 .head-image{
@@ -688,10 +687,57 @@ margin: 0 0 20px 0
 }
 .navbar-nav{
 	margin: 0;
-}
-.navbar-collapse{
-	float: right;
-	width: 100%;
-}
+
 }
 
+/** SMALL IPHONES**********************/
+@media (max-width: 390px){
+	.head-image{
+	height: 90px;
+	width: 120px;
+}
+.navbar-brand{
+	font-weight: bolder;
+	font-size: 10px;
+	padding: 40px 0 0 10px;
+}
+
+#iframe{
+	height: 1100px;
+}
+
+.text-position{
+	margin: 15px 0 0 0;
+	text-align: justify;
+	float: none;
+	clear: left;
+	height: 250px;
+	overflow: auto;
+}
+.testimonial, .testimonial2{
+	float: none;
+	width: 100%;
+
+}
+.testmonial-div-1{
+	margin-bottom: 18em;
+}
+
+}
+
+/** SMALL IPHONES**********************/
+@media (max-width: 316px){
+	.head-image{
+	height: 50px;
+	width: 70px;
+}
+.navbar-brand{
+	display: none;
+}
+#head-div{
+	height: 100px;
+}
+.navbar-toggle{
+	margin-top: 50px;
+}
+}
