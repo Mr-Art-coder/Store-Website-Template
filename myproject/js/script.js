@@ -11,3 +11,4 @@ $(document).ready(function(){
 }
 );
 
+//highlight the navigation
