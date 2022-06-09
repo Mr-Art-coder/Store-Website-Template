@@ -11,4 +11,4 @@ $(document).ready(function(){
 }
 );
 
-//highlight the navigation
+//make the header green 
