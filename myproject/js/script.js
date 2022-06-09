@@ -11,4 +11,16 @@ $(document).ready(function(){
 }
 );
 
-//make the header green 
+//highlight the navigation menu for the current page
+$(document).ready(function(){
+    var url = window.location;
+    $('nav a[href="'+ url +'"]').parent().addClass('active');
+    $('nav a').filter(function(){
+        return this.href == url;
+    }).parent().addClass('active');
+}
+);
+
+
+
+
