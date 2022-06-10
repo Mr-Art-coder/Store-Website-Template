@@ -78,8 +78,22 @@ body{
 	height: 600px;
 	border: outset #e94b3cff;
 	margin-bottom: 50px;
-
 }
+.blur-active{
+	background-color: rgba(31, 32, 33, 0.518);
+	width: fit-content;
+	text-align: center;
+	padding: 30px;
+	margin: 16em auto 20px auto;
+	border: none;
+	
+}
+.blur-active > span{
+	font-size: 20px;
+	color: #fff;
+	line-height: 2em;
+}
+
 .sub-menu, .sub-menu3{
 float: left;
 width: 32%;
@@ -122,8 +136,7 @@ overflow: hidden;
 	padding-top: 5px;
 	text-align: center;
 	font-weight: bolder;
-	background-color: #e94b3cff;
-	opacity: .8;
+	background-color: rgba(233, 75, 60, 0.822);
 }
 
 /** Testimonial **/
@@ -292,9 +305,8 @@ footer{
 	padding-top: 5px;
 	text-align: center;
 	font-weight: bolder;
-	color: #e94b3cff;
-	background-color: #fff; 
-	opacity: .8;
+	color: #fff;
+	background-color: rgba(233, 75, 60, 0.76); 
 }
 
 .male-div dir{
@@ -617,7 +629,13 @@ margin: 0 0 20px 0
 .foot{
 	margin-bottom: 550px;
 }
-
+.blur-active{
+	margin: 14em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 2em;
+}
 /***************** MALE HTML ******************/
 .male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
 .male14, .male15, .male16{
@@ -689,6 +707,14 @@ margin: 0 0 20px 0
 	margin: 0;
 
 }
+.blur-active{
+	margin: 13em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 25px;
+}
+}
 
 /** SMALL IPHONES**********************/
 @media (max-width: 390px){
@@ -722,6 +748,13 @@ margin: 0 0 20px 0
 .testmonial-div-1{
 	margin-bottom: 18em;
 }
+.blur-active{
+	margin: 13em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 25px;
+}
 
 }
 
@@ -739,5 +772,12 @@ margin: 0 0 20px 0
 }
 .navbar-toggle{
 	margin-top: 50px;
+}
+.blur-active{
+	margin: 11em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 27px;
 }
 }
