@@ -529,29 +529,41 @@ section p{
 .grid-container{
 	display: grid;
 	grid-template-columns: 40% 60%;
+	grid-template-rows: 500px  auto;
 	padding: 20px;
 	
 }
 .grid-item{
 	margin: 20px;
-	height: 500px;
-	
+	line-height: 2em;
+	font-size: 20px;
 }
 .grid-image{
-	background: url('../images/store.jpg') no-repeat;
+background: url('../images/store.jpg') no-repeat;
 	background-size: 100% 100%;
 	border: solid 1px #e94b3cff;
 	box-shadow: 0px 0px 10px rgb(8, 8, 8);
+
 }
+
 .grid-note{
-	line-height: 2em;
-	font-size: 20px;
 	text-align: justify;
 	overflow: auto;
 }
 .grid-note::first-letter{
 	color: #e94b3cff;
 	font-size: 2em;
+}
+.grid-address{
+	color: #e94b3cff;
+}
+.grid-address a{
+	text-decoration: none;
+	color: #e94b3cff;
+}
+.grid-address a:hover{
+	color: #2ecbe9;
+	font-style: italic;
 }
 /** Extra LARGE device only **/
 @media (min-width: 1200px ){
