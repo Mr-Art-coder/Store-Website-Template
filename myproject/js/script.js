@@ -22,7 +22,12 @@ $(document).ready(function(){
 );
 
 
+var dropnav=document.getElementById("dropitn");
+var movement=document.getElementById("automation");
 
+dropnav.onclick=function() {
+    movement.style.marginTop="200px"
+};
 
 let slideIndex = 0;
 showSlides();
