@@ -1,0 +1,920 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0px;
+	background-color: #97b1b625;
+	color: #2ecbe9;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/** HEAD WORK **/
+
+#head-div{
+	background-color: #fff;
+	height: 150px;
+	border: 0;
+	border-radius: 0;
+}
+
+
+.head-image{
+	background: url('../images/mogo.png') no-repeat;
+	background-size: 100% 100%;
+	height: 100px;
+	width: 200px;
+	margin: 25px 0px 0px 35px;
+}
+
+.navbar-brand{
+	font-weight: bolder;
+	padding: 40px 0 0 10px;
+}
+.navbar-brand p{
+	color: #2ecbe9;
+
+}
+.navbar-brand div{
+	color: #e94b3cff;
+}
+#navbar-right{
+	float: right;
+	margin-top: 50px;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+#navbar-right a{
+	color: #2ecbe9;
+}
+ #navbar-right a:hover, #navbar-right a:active{
+ 	color: #e94b3cff; /** WANT TO CHANGE THIS COLOR**/
+ }
+
+
+.navbar-toggle{
+	background-color: #e94b3cff;
+	border-radius: 50px;
+	margin-top: 100px;
+}
+.navbar-toggle .icon-bar {
+  width: 30px;
+}
+.navbar-collapse{
+	background-color: inherit;
+	
+}
+
+
+
+/** B0DDY WORK **/
+.row{
+	margin: 50px 25px 30px 25px;
+
+}
+/* Slideshow container */
+.slideshow-container {
+	position: relative;
+	margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: rgba(255, 255, 255, 0.966);
+	font-weight: bold;
+	font-size: 25px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  /* The dots/bullets/indicators */
+  .dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px 50px 0;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  
+  .slideshow-container .active, .dot:hover {
+	background-color: #e94b3cff;
+  }
+  
+  /* Fading animation */
+  .fade {
+	animation-name: fade;
+	animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+	from {opacity: 1}
+	to {opacity: 1}
+  }
+/**.body-image{
+	background: url('../images/store.jpg') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 600px;
+	border: 2px inset #e94b3cff;
+	box-shadow: 0 0 20px rgb(8, 8, 8);
+	margin-bottom: 50px;
+}
+.blur-active{
+	background-color: rgba(31, 32, 33, 0.518);
+	width: fit-content;
+	text-align: center;
+	padding: 30px;
+	margin: 16em auto 20px auto;
+	border: none;
+	
+}
+.blur-active > span{
+	font-size: 20px;
+	color: #fff;
+	line-height: 2em;
+}**/
+
+.sub-menu, .sub-menu3{
+float: left;
+width: 32%;
+height: 350px;
+border: 2px inset #e94b3cff;
+box-shadow: 0 0 10px rgb(8, 8, 8);
+border-bottom-right-radius: 30px;
+border-top-left-radius: 30px;
+position: relative;
+margin: 0px 20px 20px 0px;
+overflow: hidden;
+}
+.sub-menu {
+	background: url('../images/homemale.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+.sub-menu3{
+	background: url('../images/homefemale.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.sub-menu2{
+	float: right;
+	width: 32%;
+height: 350px;
+border: 2px inset #e94b3cff;
+box-shadow: 0 0 10px rgb(8, 8, 8);
+border-bottom-right-radius: 30px;
+border-top-left-radius: 30px;
+position: relative;
+margin: 0px 0px 20px 0px;
+overflow: hidden;
+cursor: pointer;
+}
+
+.absolute span{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	color: #fff;
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+	text-align: center;
+	font-weight: bolder;
+	background-color: rgba(233, 75, 60, 0.822);
+}
+
+/** Testimonial **/
+#iframe{
+	background-color: rgba(112, 110, 107, 0.507);
+	width: 100%;
+	font-weight: bold;
+	margin: 0 0 80px 0;
+	color: #fff;
+
+}
+
+#iframe > p{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.testimonial{
+	background: url('../images/male.jpeg') no-repeat;
+}
+.testimonial2{
+background: url('../images/female.jpeg') no-repeat;
+}
+
+.testimonial, .testimonial2{
+	background-size: 100% 100%;
+	height: 250px;
+	width: 210px;
+	border: none;
+	float: left;
+}
+
+.testmonial-div-1 {
+	float: left;	
+}
+
+.testmonial-div-3{
+	float: right;
+}
+
+.testmonial-div-1, .testmonial-div-3{
+	width: 48%; 
+	height: 250px;
+	margin-top: 20px;
+}
+
+.text-position{
+	margin: 0px 0 0 16em ;
+	text-align: justify;
+	height: 250px;
+	overflow: auto;
+}
+
+footer{
+	clear: left;
+	text-align: center;
+	background-color: #e94b3cff;
+	color: #fff;
+	height: 50px;
+	padding-top: 10px;
+}
+
+
+/************ MALE HTML *********************/
+
+.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
+.male14, .male15, .male16{
+	float: left;
+	width: 24%;
+	height: 300px;
+	border: solid #e94b3cff;
+	box-shadow: 0px 0px 10px rgb(8, 8, 8);
+	margin: 0px 9px 30px 0px;
+	position: relative;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+.male1{
+	background: url('../images/male1.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male2{
+	background: url('../images/male2.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male3{
+	background: url('../images/male3.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male4{
+	background: url('../images/male4.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male5{
+	background: url('../images/male5.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male6{
+	background: url('../images/male6.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male7{
+	background: url('../images/male7.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male8{
+	background: url('../images/male8.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male9{
+	background: url('../images/male9.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male10{
+	background: url('../images/male10.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male11{
+	background: url('../images/male11.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male12{
+	background: url('../images/male12.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male13{
+	background: url('../images/male13.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male14{
+	background: url('../images/male14.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male15{
+	background: url('../images/male15.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.male16{
+	background: url('../images/male16.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+
+.male-div span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 30px;
+	padding-top: 5px;
+	text-align: center;
+	font-weight: bolder;
+	color: #fff;
+	background-color: rgba(233, 75, 60, 0.76); 
+}
+
+.male-div dir{
+	position: absolute;
+	border: inset red;
+	padding: 20px;
+	border-radius: 100%;
+	color: #e94b3cff;
+	background-color: #fff;
+	top: -15px;
+	right: 0;
+	font-weight: bolder;
+
+}
+
+
+
+/************ FEMALE HTML *********************/
+.female1, .female2, .female3, .female4, .female5, .female6, .female7, .female8, .female9,.female10, .female11, .female12, .female13, 
+.female14, .female15, .female16{
+	float: left;
+	width: 24%;
+	height: 300px;
+	border: solid #e94b3cff;
+	box-shadow: 0px 0px 10px rgb(8, 8, 8);
+	margin: 0px 9px 30px 0px; 
+	position: relative;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+.female1{
+	background: url('../images/female1.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female2{
+	background: url('../images/female2.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female3{
+	background: url('../images/female3.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female4{
+	background: url('../images/female4.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female5{
+	background: url('../images/female5.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female6{
+	background: url('../images/female6.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female7{
+	background: url('../images/female7.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female8{
+	background: url('../images/female8.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female9{
+	background: url('../images/female9.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female10{
+	background: url('../images/female10.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female11{
+	background: url('../images/female11.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female12{
+	background: url('../images/female12.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female13{
+	background: url('../images/female13.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female14{
+	background: url('../images/female14.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female15{
+	background: url('../images/female15.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.female16{
+	background: url('../images/female16.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+/************************************ SHOEE HTML ************************/
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9,.shoe10, .shoe11, .shoe12, .shoe13, 
+.shoe14, .shoe15, .shoe16{
+	float: left;
+	width: 24%;
+	height: 300px;
+	border: solid #e94b3cff;
+	box-shadow: 0px 0px 10px rgb(8, 8, 8);
+	margin: 0px 9px 30px 0px; 
+	position: relative;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	overflow: hidden;
+}
+.shoe1{
+	background: url('../images/shoe1.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe2{
+	background: url('../images/shoe2.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe3{
+	background: url('../images/shoe3.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe4{
+	background: url('../images/shoe4.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe5{
+	background: url('../images/shoe5.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe6{
+ background: url('../images/shoe6.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe7{
+	background: url('../images/shoe7.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe8{
+	background: url('../images/shoe8.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe9{
+	background: url('../images/shoe9.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe10{
+	background: url('../images/shoe10.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe11{
+	background: url('../images/shoe11.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe12{
+	background: url('../images/shoe12.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe13{
+	background: url('../images/shoe13.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe14{
+	background: url('../images/shoe14.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe15{
+	background: url('../images/shoe15.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.shoe16{
+	background: url('../images/shoe16.jpeg') no-repeat;
+	background-size: 100% 100%;
+}
+
+/************** ABOUT PAGE ***************/
+section p{
+	text-align: center;
+	font-weight: bolder;
+	color: #e94b3cff;
+	font-size: 2em;
+}
+.grid-container{
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 500px  auto;
+	padding: 20px;
+	
+}
+.grid-item{
+	margin: 20px;
+	line-height: 2em;
+	font-size: 20px;
+}
+.grid-image{
+background: url('../images/store.jpg') no-repeat;
+	background-size: 100% 100%;
+	border: solid 1px #e94b3cff;
+	box-shadow: 0px 0px 10px rgb(8, 8, 8);
+
+}
+
+.grid-note{
+	text-align: justify;
+	overflow: auto;
+}
+.grid-note::first-letter{
+	color: #e94b3cff;
+	font-size: 2em;
+}
+.grid-address{
+	color: #e94b3cff;
+}
+.grid-address a{
+	text-decoration: none;
+	color: #e94b3cff;
+}
+.grid-address a:hover{
+	color: #2ecbe9;
+	font-style: italic;
+}
+/** Extra LARGE device only **/
+@media (min-width: 1200px ){
+hr{
+	display: none;
+}
+}
+
+
+/** Large device device only **/
+@media (min-width: 992px) and (max-width: 1199px){
+
+
+#navbar-right{
+
+	margin-right: 20px;
+}
+.sub-menu, .sub-menu3{
+margin: 0px 15px 20px 0px;
+}
+
+.sub-menu2{
+margin: 0px 0px 20px 0px;
+}
+hr{
+	display: none;
+}
+/***************** MALE HTML ******************/
+
+}
+
+/** Medium  device only **/
+
+@media (min-width: 768px ) and (max-width: 991px){
+
+.head-image{
+	
+	height: 100px;
+	width: 150px;
+}
+.navbar-brand{
+	font-weight: bolder;
+	padding: 40px 0 0 10px;
+}
+#navbar-right{
+	margin-top: 100px;
+}
+#navbar-right a{
+	padding-left: 10px;
+	font-size: 20px;
+	}
+
+.sub-menu, .sub-menu3{
+width: 49%;
+margin: 0 0 20px 0;
+}
+.sub-menu3{
+float: right;
+}
+
+.sub-menu2{
+	width: 100%;
+margin: 0 0 20px 0
+}
+hr{
+	display: none;
+}
+/***************** MALE HTML ******************/
+.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
+.male14, .male15{
+	width: 32%;
+	margin-right: 9px;
+}
+.male16{
+	display: none;
+}
+
+
+/***************** FEMALE HTML ******************/
+.female1, .female2, .female3, .female4, .female5, .female6, .female7, .female8, .female9,.female10, .female11, .female12, .female13, 
+.female14, .female15{
+	width: 32%;
+	margin-right: 9px;
+}
+
+.female16{
+	display: none;
+}
+
+/********************************************* SHOE **********************************/
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9,.shoe10, .shoe11, .shoe12, .shoe13, 
+.shoe14, .shoe15{
+		width: 32%;
+	margin-right: 9px;
+}
+
+.shoe16{
+	display: none;
+}
+
+}
+
+
+/** SMALL DEVICE ONLY **/
+@media (max-width: 767px) {
+	.sub-menu, .sub-menu3{
+width: 100%;
+margin: 0 0 20px 0;
+}
+
+.sub-menu2{
+	width: 100%;
+margin: 0 0 20px 0
+}
+
+.testmonial-div-1, .testmonial-div-3 {
+	width: 100%; 
+	
+	
+}
+.foot{
+	margin-bottom: 550px;
+}
+.blur-active{
+	margin: 14em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 2em;
+}
+hr{
+	clear: left;
+	margin-top: 300px;
+	border: solid 1px rgb(121, 107, 107); 
+	
+}
+/***************** MALE HTML ******************/
+.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
+.male14, .male15, .male16{
+	width: 100%;
+}
+
+
+/***************** FEMALE HTML ******************/
+.female1, .female2, .female3, .female4, .female5, .female6, .female7, .female8, .female9,.female10, .female11, .female12, .female13, 
+.female14, .female15, .female16{
+	width: 100%;
+}
+
+
+
+/************************************** SHOE ***********************************/
+.shoe1, .shoe2, .shoe3, .shoe4, .shoe5, .shoe6, .shoe7, .shoe8, .shoe9,.shoe10, .shoe11, .shoe12, .shoe13, 
+.shoe14, .shoe15, .shoe16{
+		width: 100%;
+}
+
+#navbar-right{
+	margin-top: 0;
+	float: none;
+	display: block;
+	text-align: center;
+
+}
+.navbar-nav{
+	margin: 0;
+
+}
+
+	.navbar-collapse{
+		float: right;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+}
+
+/** EXTRA SMALL DEVICES ***********/
+@media (max-width: 500px){
+.head-image{
+	height: 90px;
+	width: 150px;
+}
+.navbar-brand{
+	font-weight: bolder;
+	font-size: 15px;
+	padding: 40px 0 0 10px;
+}
+.navbar-brand p{
+	color: #2ecbe9;
+	margin-bottom: -5px;
+
+}
+.navbar-brand div{
+	color: #e94b3cff;
+}
+#navbar-right{
+	margin-top: 0;
+	float: none;
+	display: block;
+	text-align: center;
+}
+.navbar-nav{
+	margin: 0;
+
+}
+.blur-active{
+	margin: 13em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 25px;
+}
+/** ABOUT PAGE***/
+
+.grid-container{
+
+	grid-template-columns: 100%;
+	
+}
+
+}
+
+/** SMALL IPHONES**********************/
+@media (max-width: 390px){
+	.head-image{
+	height: 90px;
+	width: 120px;
+}
+.navbar-brand{
+	font-weight: bolder;
+	font-size: 10px;
+	padding: 40px 0 0 10px;
+}
+
+#iframe{
+	height: 1100px;
+}
+
+.text-position{
+	margin: 15px 0 0 0;
+	text-align: justify;
+	float: none;
+	clear: left;
+	height: 250px;
+	overflow: auto;
+}
+.testimonial, .testimonial2{
+	float: none;
+	width: 100%;
+
+}
+.testmonial-div-1{
+	margin-bottom: 18em;
+}
+.blur-active{
+	margin: 13em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 25px;
+}
+
+}
+
+/** SMALL IPHONES**********************/
+@media (max-width: 316px){
+	.head-image{
+	height: 50px;
+	width: 70px;
+}
+.navbar-brand{
+	display: none;
+}
+#head-div{
+	height: 100px;
+}
+.navbar-toggle{
+	margin-top: 50px;
+}
+.blur-active{
+	margin: 11em auto 20px auto;
+}
+.blur-active > span{
+	font-size: 17px;
+	line-height: 27px;
+}
+}
