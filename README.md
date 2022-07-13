@@ -39,6 +39,6 @@ Connect with me on [Twitter](https://twitter.com/Mr_Art_officia).
 Connect with me on [LinkedIn](https://www.linkedin.com/in/raphael-adegunle-131844182/).
 
 ----
-Click [here](![image](https://mr-art-coder.github.io/Store-Website-Template/myproject). to show the website online.
+Click [here](https://mr-art-coder.github.io/Store-Website-Template/myproject). to show the website online.
 
 
