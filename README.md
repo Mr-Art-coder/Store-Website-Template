@@ -1,37 +1,43 @@
-## Welcome to GitHub Pages
+# ABOUT PROJECT
 
-You can use the [editor on GitHub](https://github.com/Mr-Art-coder/projectwork/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+This responsive website was designed using HTML, CSS, Twitter Bootstrap and Javascript. It is a site designed to showcase the online presence of a store named DEXCI. And as a responsive website as it is, it respond to all sizes of screens to the least of 326px screen, It is a ready made template which can be used for any online store.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+----
+# Pages
+----
+## HomePage
 
-### Markdown
+The homepage constists of 4 layouts which contains Header, Carousel (this showcase the inner beauty of the store), section (this showcase the shortcut to female wears, male wears and map), testimonial (what people say about the store) and footer.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+-----
 
-```markdown
-Syntax highlighted code block
+## Wears
 
-# Header 1
-## Header 2
-### Header 3
+This menu contains two dropmenus, Male wears and Female Wears. The male wear page contains all the latest male wears that the store has availble while the female wears page contains all the latest female wears available in the store. All with price tag.
 
-- Bulleted
-- List
+----
 
-1. Numbered
-2. List
+## Shoes
 
-**Bold** and _Italic_ and `Code` text
+This page contains all the latest shoes, both male and female, available in the store.
 
-[Link](url) and ![Image](src)
-```
+----
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## About
 
-### Jekyll Themes
+This page gives more information about the store, the mission, vission and what the store has in store for its customers.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Mr-Art-coder/projectwork/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+----
+----
 
-### Support or Contact
+# Credit
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+All the pictures used in this project was gotten from google.
+
+----
+Connect with me on [Twitter](https://twitter.com/Mr_Art_officia).
+Connect with me on [LinkedIn](https://www.linkedin.com/in/raphael-adegunle-131844182/).
+
+----
+Click [here](https://mr-art-coder.github.io/projectwork/myproject/). to show the website online.
+
