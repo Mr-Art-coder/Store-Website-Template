@@ -257,7 +257,6 @@ background: url('../images/female.jpeg') no-repeat;
 .text-position{
 	margin: 0px 0 0 16em ;
 	text-align: justify;
-	height: 250px;
 	overflow: auto;
 }
 
