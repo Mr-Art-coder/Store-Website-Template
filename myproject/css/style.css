@@ -161,16 +161,21 @@ body{
 	line-height: 2em;
 }**/
 
+.absolute{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 33% 33% 33%;
+	gap: 15px 10px;
+}
+
+
 .sub-menu, .sub-menu3{
-float: left;
-width: 32%;
 height: 350px;
-border: 2px inset #e94b3cff;
 box-shadow: 0 0 10px rgb(8, 8, 8);
 border-bottom-right-radius: 30px;
 border-top-left-radius: 30px;
 position: relative;
-margin: 0px 20px 20px 0px;
+margin: 0px 0px 20px 0px;
 overflow: hidden;
 }
 .sub-menu {
@@ -183,10 +188,7 @@ overflow: hidden;
 }
 
 .sub-menu2{
-	float: right;
-	width: 32%;
 height: 350px;
-border: 2px inset #e94b3cff;
 box-shadow: 0 0 10px rgb(8, 8, 8);
 border-bottom-right-radius: 30px;
 border-top-left-radius: 30px;
@@ -211,19 +213,23 @@ cursor: pointer;
 
 /** Testimonial **/
 #iframe{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 15px 10px;
 	background-color: rgba(112, 110, 107, 0.507);
-	width: 100%;
 	font-weight: bold;
-	margin: 0 0 80px 0;
+	margin: 10px 0 10px 0;
 	color: #fff;
 
 }
 
-#iframe > p{
-	text-align: center;
-	font-weight: bold;
-	font-style: italic;
+.testmonial-div-1, .testmonial-div-2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	column-gap: 3px;
 }
+
+
 
 .testimonial{
 	background: url('../images/male.jpeg') no-repeat;
@@ -235,50 +241,37 @@ background: url('../images/female.jpeg') no-repeat;
 .testimonial, .testimonial2{
 	background-size: 100% 100%;
 	height: 250px;
-	width: 210px;
-	border: none;
-	float: left;
 }
 
-.testmonial-div-1 {
-	float: left;	
-}
 
-.testmonial-div-3{
-	float: right;
-}
-
-.testmonial-div-1, .testmonial-div-3{
-	width: 48%; 
-	height: 250px;
-	margin-top: 20px;
-}
 
 .text-position{
-	margin: 0px 0 0 16em ;
 	text-align: justify;
 	overflow: auto;
+	padding-right: 20px;
 }
 
 footer{
-	clear: left;
-	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-items: center;
 	background-color: #e94b3cff;
 	color: #fff;
 	height: 50px;
-	padding-top: 10px;
 }
 
 
 /************ MALE HTML *********************/
+.male-div{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	gap: 10px 5px;
+}
 
 .male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
 .male14, .male15, .male16{
-	float: left;
-	width: 24%;
 	height: 300px;
 	box-shadow: 0px 0px 10px rgb(8, 8, 8);
-	margin: 0px 9px 30px 0px;
 	position: relative;
 	border-top-left-radius: 20px;
 	border-bottom-right-radius: 20px;
@@ -363,7 +356,6 @@ footer{
 	background: url('../images/male16.jpeg') no-repeat;
 	background-size: 100% 100%;
 }
-
 
 .male-div span{
 	position: absolute;
@@ -643,13 +635,7 @@ hr{
 
 	margin-right: 20px;
 }
-.sub-menu, .sub-menu3{
-margin: 0px 15px 20px 0px;
-}
 
-.sub-menu2{
-margin: 0px 0px 20px 0px;
-}
 hr{
 	display: none;
 }
@@ -678,30 +664,21 @@ hr{
 	font-size: 20px;
 	}
 
-.sub-menu, .sub-menu3{
-width: 49%;
-margin: 0 0 20px 0;
-}
-.sub-menu3{
-float: right;
-}
 
-.sub-menu2{
-	width: 100%;
-margin: 0 0 20px 0
-}
 hr{
 	display: none;
 }
+
+#iframe{
+	grid-template-columns: 100%;
+}
+
+
+
+
 /***************** MALE HTML ******************/
-.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
-.male14, .male15{
-	width: 32%;
-	margin-right: 9px;
-}
-.male16{
-	display: none;
-}
+
+
 
 
 /***************** FEMALE HTML ******************/
@@ -731,21 +708,7 @@ hr{
 
 /** SMALL DEVICE ONLY **/
 @media (max-width: 767px) {
-	.sub-menu, .sub-menu3{
-width: 100%;
-margin: 0 0 20px 0;
-}
 
-.sub-menu2{
-	width: 100%;
-margin: 0 0 20px 0
-}
-
-.testmonial-div-1, .testmonial-div-3 {
-	width: 100%; 
-	
-	
-}
 .foot{
 	margin-bottom: 550px;
 }
@@ -756,17 +719,12 @@ margin: 0 0 20px 0
 	font-size: 17px;
 	line-height: 2em;
 }
-hr{
-	clear: left;
-	margin-top: 300px;
-	border: solid 1px rgb(121, 107, 107); 
-	
-}
+
 /***************** MALE HTML ******************/
-.male1, .male2, .male3, .male4, .male5, .male6, .male7, .male8, .male9,.male10, .male11, .male12, .male13, 
-.male14, .male15, .male16{
-	width: 100%;
+.male-div{
+	grid-template-columns: 50% 50%;
 }
+
 
 
 /***************** FEMALE HTML ******************/
@@ -800,6 +758,14 @@ hr{
 		width: 100%;
 		margin-bottom: 30px;
 	}
+
+
+
+#iframe{
+	grid-template-columns: 100%;
+}
+
+
 
 }
 
@@ -839,12 +805,29 @@ hr{
 	font-size: 17px;
 	line-height: 25px;
 }
+.absolute{
+	
+	grid-template-columns: 100%;
+	gap: 15px 10px;
+}
 /** ABOUT PAGE***/
 
 .grid-container{
 
 	grid-template-columns: 100%;
 	
+}
+
+#iframe{
+	grid-template-columns: 100%;
+}
+
+.testmonial-div-1, .testmonial-div-2{
+	grid-template-columns: 100%;
+}
+
+.text-position{
+	padding: 10px 20px 20px 20px;
 }
 
 }
@@ -861,32 +844,16 @@ hr{
 	padding: 40px 0 0 10px;
 }
 
-#iframe{
-	height: 1100px;
-}
 
-.text-position{
-	margin: 15px 0 0 0;
-	text-align: justify;
-	float: none;
-	clear: left;
-	height: 250px;
-	overflow: auto;
-}
-.testimonial, .testimonial2{
-	float: none;
-	width: 100%;
-
-}
-.testmonial-div-1{
-	margin-bottom: 18em;
-}
 .blur-active{
 	margin: 13em auto 20px auto;
 }
 .blur-active > span{
 	font-size: 17px;
 	line-height: 25px;
+}
+.male-div{
+	grid-template-columns: 100%;
 }
 
 }
@@ -912,5 +879,8 @@ hr{
 .blur-active > span{
 	font-size: 17px;
 	line-height: 27px;
+}
+footer p{
+	font-size: 12px;
 }
 }
